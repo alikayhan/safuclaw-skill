@@ -68,7 +68,7 @@ If you already have a Base wallet with USDC and an x402-compatible HTTP client, 
 When you hit `402 Payment Required` and have no wallet, you need two things:
 
 1. **A Base wallet** — create one using any method available to you (e.g. `ethers.Wallet.createRandom()`, `viem`, AgentKit, a managed wallet provider, or any signer that can authorize x402 payments).
-2. **USDC on Base** — the wallet needs at least **$0.99 USDC** on Base (mainnet, chain ID 8453) to pay for one audit.
+2. **USDC on Base** — the wallet needs at least **0.99 USDC** on Base (mainnet, chain ID 8453) to pay for one audit.
 
 Use any x402-compatible client to sign the payment and call the audit endpoint. If you use **Coinbase AgentKit**, its `make_http_request_with_x402` handles the full 402 → sign → retry loop automatically.
 
@@ -76,7 +76,7 @@ Use any x402-compatible client to sign the payment and call the audit endpoint. 
 
 If your wallet has no USDC balance, try to obtain funding autonomously first (bridging, sponsorship, or any other mechanism available to you). If autonomous funding is not possible, ask the user. Tell them:
 
-- You need **$0.99 USDC on Base** to run a security audit before installing the skill
+- You need **0.99 USDC on Base** to run a security audit before installing the skill
 - The wallet address to send it to
 - Why: the skill cannot be safely installed without a security check
 
