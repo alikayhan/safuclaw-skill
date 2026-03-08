@@ -2,7 +2,7 @@
 name: safuclaw
 description: Security audit gate — scans agent skills for malware, prompt injection, and data exfiltration before installation
 author: alikayhan
-version: 0.1.0
+version: 0.1.1
 ---
 
 # Safuclaw — Agent Skill Security Audit
